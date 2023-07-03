@@ -1,0 +1,19 @@
+{
+  "name": "w2d1",
+  "version": "1.0.0",
+  "description": "Lecture about w2d1 - Testing",
+  "main": "calculateCart.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "test-but-better": "mocha --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7"
+  }
+}
