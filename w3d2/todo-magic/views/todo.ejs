@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Todos YEAH!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Super Todo List of Destiny</h1>
+    </header>
+    <main>
+      <a href="/todos">Go back to todos</a>
+      <a href="/todos/<%= todo.id %>/edit">Edit this todo</a>
+      <p><%= todo.task %> - <%= todo.description %></p>
+      <% if(todo.isComplete){ %>
+      <p>Completed!</p>
+      <form action="/todos/<%= todo.id %>/toggle" method="POST">
+        <button type="submit">Mark as incomplete</button>
+      </form>
+      <% } else { %>
+      <p>Not completed yet!</p>
+      <form action="/todos/<%= todo.id %>/toggle" method="POST">
+        <button type="submit">Mark as complete</button>
+      </form>
+      <% } %>
+    </main>
+  </body>
+</html>
