@@ -1,0 +1,44 @@
+body{
+  font-size:40px;
+}
+
+/* .site-title{
+  font-family: "Comic Sans MS";
+} */
+
+/* We look for all the h1 that are descendants of header */
+header h1{
+  font-family: "Comic Sans MS";
+}
+
+/* We look for the h1 that are a direct child of main */
+main > h1{
+  font-family: Helvetica;
+}
+
+article {
+  border:5px solid #b0b;
+  padding:20px;
+  margin:50px 0;
+
+}
+/* .first{
+  font-size:60px;
+} */
+
+article:first-of-type{
+  font-size:60px;
+}
+.sponsored {
+  background:yellow;
+  border-color: red;
+}
+
+#article-id-2{
+  color:#b0b;
+}
+
+article h1{
+  font-family: 'Merriweather', serif;
+
+}

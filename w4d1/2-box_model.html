@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Box Model</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    body{
+      font-size:50px;
+    }
+
+    header{
+      background-color: #c0ffee;
+      padding:50px;
+    }
+
+    /* CSS => Country Style Soup */
+    /* Cascading Style Sheets */
+    /* Waterfall / Cascade => Top to bottom, bottom wins! */
+
+    div{
+      display:inline-block;
+
+      box-sizing: border-box;
+
+      /* width:200px;
+      height:200px; */
+
+      padding:20px; /* Between the border and the element */
+      
+      padding-left:50px;
+      padding-right:10px;
+      padding-top:100px;
+      padding-bottom:20px;
+
+      padding: 50px 10px; /* Top-bottom / Left-right */
+      padding:50px 10px 20px; /* Top / Left-Right / Bottom */
+      padding:100px 10px 20px 50px; /* Clockwise, starting from top */
+      
+      padding:100px;
+      padding-bottom:20px;
+      
+      margin:20px; /* Between the outside of the border and the other elements*/
+
+      margin-left:50px;
+      margin-right:10px;
+      margin-top:100px;
+      margin-bottom:20px;
+
+      border:5px solid brown;
+      background-color: burlywood;
+    }
+
+  
+  </style>
+
+  <body>
+    <header>
+      <h1>Party of boxes</h1>
+      <p>Shipping coffee since '86</p>
+    </header>
+    <div>
+      <span>☕</span>
+    </div>
+    <div>
+      <span>☕</span>
+    </div>
+  </body>
+</html>
