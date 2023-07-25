@@ -1,0 +1,31 @@
+SELECT * FROM authors WHERE LOWER(name) LIKE "a%";
+SELECT * FROM authors WHERE name ILIKE "a%";
+
+
+-- Ahmad
+-- alex
+
+
+CREATE TABLE
+  id SERIAL
+
+
+
+id INT AI
+
+
+VARCHAR(10)
+
+
+VARCHAR(6)
+
+
+AGE => DONT STORE THE AGE!
+
+date_of_birth
+
+DATE "2023-06-06"
+
+TIMESTAMP "2023-06-06 00:00:00"
+
+TIMESTAMPZ "2023-06-06 00:00:00 TIMEZONE"
