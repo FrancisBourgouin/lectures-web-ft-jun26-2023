@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header>
+      <h1>Enter new joke!</h1>
+    </header>
+    <form action="/api/jokes" method="POST">
+      <input type="text" name="question" placeholder="Enter a question" />
+      <input type="text" name="answer" placeholder="Enter a answer" />
+      <input type="number" name="rating" placeholder="Enter a rating" />
+
+      <select name="author_id">
+        <% for(const author of authors){ %>
+        <option value="<%= author.id %>"><%= author.name %></option>
+        <% } %>
+      </select>
+      <button>Add new joke</button>
+    </form>
+  </body>
+</html>
