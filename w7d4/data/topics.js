@@ -1,4 +1,4 @@
-export const q1 = {
+export const t1 = {
   id: 1,
   userId: 1,
   question:
@@ -57,7 +57,7 @@ export const q1 = {
   ],
 };
 
-export const q2 = {
+export const t2 = {
   id: 2,
   userId: 4,
   question:
@@ -116,7 +116,7 @@ export const q2 = {
   ],
 };
 
-export const q3 = {
+export const t3 = {
   id: 3,
   userId: 8,
   question:
@@ -175,5 +175,5 @@ export const q3 = {
   ],
 };
 
-export const questionsArr = [q1, q2, q3];
-export const questionsObj = { 1: q1, 2: q2, 3: q3 };
+export const topicsArr = [t1, t2, t3];
+export const topicsObj = { 1: t1, 2: t2, 3: t3 };
