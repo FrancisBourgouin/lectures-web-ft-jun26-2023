@@ -1,0 +1,70 @@
+body {
+  font-size: 24px;
+}
+.Header {
+  text-align: center;
+}
+
+.Profile,
+.ProfileForm,
+.NewProfileForm {
+  display: grid;
+
+  grid-template-columns: 400px auto;
+  grid-template-areas:
+    "profile name"
+    "profile username"
+    "profile bio"
+    "edit edit";
+  justify-content: center;
+  gap: 1em;
+}
+
+.Profile div,
+.NewProfileForm div,
+.ProfileForm div {
+  grid-area: profile;
+  width: 350px;
+  height: 350px;
+  background-image: url("/profile_pictures/1.png");
+  background-size: cover;
+  border-radius: 50%;
+}
+.Profile h1,
+.NewProfileForm input:first-of-type,
+.ProfileForm input:first-of-type {
+  grid-area: name;
+}
+
+.Profile h2,
+.NewProfileForm input:last-of-type,
+.ProfileForm input:last-of-type {
+  grid-area: username;
+}
+
+.Profile p,
+.NewProfileForm textarea,
+.ProfileForm textarea {
+  grid-area: bio;
+}
+
+.Profile button,
+.NewProfileProfile button,
+.ProfileForm button {
+  font-size: 1.75em;
+  grid-area: edit;
+  max-width: 400px;
+  padding: 0.5em 0.25em;
+}
+
+.ProfileForm input,
+.ProfileForm textarea,
+.NewProfileProfile textarea,
+.NewProfileProfile input {
+  font-size: 1.25em;
+}
+.NewProfileProfile textarea,
+.ProfileForm textarea {
+  width: 600px;
+  height: 300px;
+}
